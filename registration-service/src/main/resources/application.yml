@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: registration-service   # must match config-repo file
+  profiles:
+    active: dev                  # 👈 environment (dev / test / prod)
+  config:
+    import: configserver:http://localhost:8888
